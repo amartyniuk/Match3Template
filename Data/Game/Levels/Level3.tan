@@ -420,8 +420,8 @@
 					"Color":[939524096],
 					"Id":"LineGradient",
 					"Pivot":[0.5,1],
-					"Position":[683,773],
-					"Size":[1366,560.38214],
+					"Position":[640,725],
+					"Size":[1280,560.38214],
 					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -435,8 +435,8 @@
 					"Color":[4294950656],
 					"Id":"Bg",
 					"Pivot":[0.5,0.5],
-					"Position":[683,381.5],
-					"Size":[1366,763],
+					"Position":[640,357.5],
+					"Size":[1280,715],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"/Shell/Data/UI/Bg"
@@ -446,7 +446,7 @@
 			],
 			"Pivot":[0.5,0.5],
 			"Position":[683,384],
-			"Size":[1366,768],
+			"Size":[1280,720],
 			"TangerineFlags":1280
 		}
 	],

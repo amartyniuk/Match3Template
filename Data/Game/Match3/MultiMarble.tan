@@ -2,9 +2,6 @@
 	"class":"Lime.Frame, Lime",
 	"Animations":[
 		{
-			"Id":"ZeroPose"
-		},
-		{
 			"Id":"Swap",
 			"Markers":[
 				{
@@ -32,6 +29,7 @@
 			]
 		},
 		{
+			"ApplyZeroPose":false,
 			"Id":"Kind",
 			"Markers":[
 				{
@@ -40,32 +38,63 @@
 					"JumpTo":""
 				},
 				{
+					"Action":2,
+					"Frame":54,
+					"Id":"",
+					"JumpTo":""
+				},
+				{
 					"Action":1,
-					"Frame":1,
+					"Frame":56,
 					"Id":"02",
 					"JumpTo":""
 				},
 				{
+					"Action":2,
+					"Frame":110,
+					"Id":"",
+					"JumpTo":""
+				},
+				{
 					"Action":1,
-					"Frame":2,
+					"Frame":112,
 					"Id":"03",
 					"JumpTo":""
 				},
 				{
-					"Action":1,
-					"Frame":3,
-					"Id":"04",
+					"Action":2,
+					"Frame":166,
+					"Id":"",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
-					"Frame":4,
+					"Frame":168,
+					"Id":"04",
+					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":222,
+					"Id":"",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
+					"Frame":224,
 					"Id":"05",
+					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":278,
+					"Id":"",
 					"JumpTo":""
 				}
 			]
 		},
 		{
+			"ApplyZeroPose":false,
 			"Id":"Show",
 			"Markers":[
 				{
@@ -81,6 +110,7 @@
 			]
 		},
 		{
+			"ApplyZeroPose":false,
 			"Id":"DropDown",
 			"Markers":[
 				{
@@ -106,6 +136,7 @@
 			]
 		},
 		{
+			"ApplyZeroPose":false,
 			"Id":"Selection",
 			"Markers":[
 				{
@@ -202,331 +233,49 @@
 	"Color":[4294967295],
 	"Nodes":[
 		{
-			"class":"Lime.Image, Lime",
+			"class":"Lime.SimpleText, Lime",
 			"Animators":[
 				{
-					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
+					"class":"Lime.Animator`1[[System.String]], Lime",
 					"AnimationId":"Kind",
 					"ReadonlyKeys":[
-						[
-							0,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble01"
-							}
-						],
-						[
-							1,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble02"
-							}
-						],
-						[
-							2,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble03"
-							}
-						],
-						[
-							3,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble04"
-							}
-						],
-						[
-							4,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble05"
-							}
-						]
+						[0,0,"01"],
+						[56,0,"02"],
+						[112,0,"03"],
+						[168,0,"04"],
+						[224,0,"05"]
 					],
-					"TargetProperty":"Texture"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DropDown",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[3,2,[0.8656715,1.0898876]],
-						[10,2,[0.8656715,1.0898876]],
-						[13,2,[1.0746272,0.77426946]],
-						[16,2,[0.8582591,1.0103356]],
-						[19,2,[1,1]],
-						[21,2,[0.96050745,0.77426946]],
-						[23,2,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Selection",
-					"ReadonlyKeys":[
-						[1,0,[16777215]],
-						[4,0,[1191182335]],
-						[8,0,[1191182335]],
-						[11,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DropDown",
-					"ReadonlyKeys":[
-						[10,2,[45,45]],
-						[13,2,[45,57]],
-						[16,2,[45,42]],
-						[19,2,[44.999996,45]],
-						[21,2,[45,53]],
-						[23,2,[44.999996,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Match",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[4,2,[1.2087278,1.2087278]],
-						[7,2,[0.29614723,0.29614723]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Match",
-					"ReadonlyKeys":[
-						[0,0,[16777215]],
-						[4,0,[4294967295]],
-						[7,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DestroyByLine",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[4,2,[1.2087278,1.2087278]],
-						[7,2,[0.7685738,0.1836863]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"DestroyByLine",
-					"ReadonlyKeys":[
-						[4,0,[4294967295]],
-						[7,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DestroyByBomb",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[4,2,[1.2087278,1.2087278]],
-						[7,2,[0.29614723,0.29614723]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"DestroyByBomb",
-					"ReadonlyKeys":[
-						[4,0,[4294967295]],
-						[7,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DestroyByLightning",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[4,2,[1.2087278,1.2087278]],
-						[7,2,[0.29614723,0.29614723]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"DestroyByLightning",
-					"ReadonlyKeys":[
-						[4,0,[4294967295]],
-						[7,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DestroyByLightning",
-					"ReadonlyKeys":[
-						[0,2,[45,45]],
-						[1,2,[47,45]],
-						[2,2,[42,45]],
-						[3,2,[48,45]],
-						[4,2,[42,45]],
-						[5,2,[46,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"DestroyByBomb",
-					"ReadonlyKeys":[
-						[0,2,0],
-						[4,2,-15.006485],
-						[7,2,106.82561]
-					],
-					"TargetProperty":"Rotation"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Show",
-					"ReadonlyKeys":[
-						[0,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,[45,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,0]
-					],
-					"TargetProperty":"Rotation"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[0,1,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[0,1,[45,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[10,0,[98,98]],
-						[20,0,[136.75371,136.75371]],
-						[30,0,[98,98]],
-						[40,0,[98,98]],
-						[50,0,[77.59998,77.59998]],
-						[60,0,[98,98]]
-					],
-					"TargetProperty":"Size"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[10,0,0],
-						[20,0,180],
-						[30,0,360],
-						[40,0,0],
-						[50,0,-180],
-						[60,0,-360]
-					],
-					"TargetProperty":"Rotation"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[0,1,[16777215]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,[45,45]]
-					],
-					"TargetProperty":"Position"
+					"TargetProperty":"Text"
 				}
 			],
-			"Blending":3,
 			"Color":[4294967295],
-			"Id":"MarbleAdd",
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"RobotoMed"
+			},
+			"FontHeight":27.1,
+			"Id":"SimpleText",
 			"Pivot":[0.5,0.5],
-			"Position":[45,45],
-			"Size":[98,98],
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"Items/Marble01"
-			}
+			"Position":[43.5,50],
+			"Size":[67,78],
+			"Text":"01"
 		},
 		{
 			"class":"Lime.ImageCombiner, Lime",
 			"Animators":[
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,false]
-					],
-					"TargetProperty":"Enabled"
-				},
 				{
 					"class":"Lime.Animator`1[[System.Boolean]], Lime",
 					"AnimationId":"Swap",
@@ -538,7 +287,8 @@
 			],
 			"Enabled":false,
 			"Id":"ImageCombiner",
-			"Operation":2
+			"Operation":2,
+			"TangerineFlags":1
 		},
 		{
 			"class":"Lime.Image, Lime",
@@ -549,42 +299,1122 @@
 					"ReadonlyKeys":[
 						[
 							0,
-							1,
+							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble01"
-							}
-						],
-						[
-							1,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble02"
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0001"
 							}
 						],
 						[
 							2,
-							1,
+							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble03"
-							}
-						],
-						[
-							3,
-							1,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble04"
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0002"
 							}
 						],
 						[
 							4,
-							1,
+							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Items/Marble05"
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0003"
+							}
+						],
+						[
+							6,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0004"
+							}
+						],
+						[
+							8,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0005"
+							}
+						],
+						[
+							10,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0006"
+							}
+						],
+						[
+							12,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0007"
+							}
+						],
+						[
+							14,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0008"
+							}
+						],
+						[
+							16,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0009"
+							}
+						],
+						[
+							18,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0010"
+							}
+						],
+						[
+							20,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0011"
+							}
+						],
+						[
+							22,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0012"
+							}
+						],
+						[
+							24,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0013"
+							}
+						],
+						[
+							26,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0014"
+							}
+						],
+						[
+							28,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0015"
+							}
+						],
+						[
+							30,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0016"
+							}
+						],
+						[
+							32,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0017"
+							}
+						],
+						[
+							34,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0018"
+							}
+						],
+						[
+							36,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0019"
+							}
+						],
+						[
+							38,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0020"
+							}
+						],
+						[
+							40,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0021"
+							}
+						],
+						[
+							42,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0022"
+							}
+						],
+						[
+							44,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0023"
+							}
+						],
+						[
+							46,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0024"
+							}
+						],
+						[
+							48,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0025"
+							}
+						],
+						[
+							50,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0026"
+							}
+						],
+						[
+							52,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0027"
+							}
+						],
+						[
+							54,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0028"
+							}
+						],
+						[
+							56,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0001"
+							}
+						],
+						[
+							58,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0002"
+							}
+						],
+						[
+							60,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0003"
+							}
+						],
+						[
+							62,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0004"
+							}
+						],
+						[
+							64,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0005"
+							}
+						],
+						[
+							66,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0006"
+							}
+						],
+						[
+							68,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0007"
+							}
+						],
+						[
+							70,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0008"
+							}
+						],
+						[
+							72,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0009"
+							}
+						],
+						[
+							74,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0010"
+							}
+						],
+						[
+							76,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0011"
+							}
+						],
+						[
+							78,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0012"
+							}
+						],
+						[
+							80,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0013"
+							}
+						],
+						[
+							82,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0014"
+							}
+						],
+						[
+							84,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0015"
+							}
+						],
+						[
+							86,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0016"
+							}
+						],
+						[
+							88,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0017"
+							}
+						],
+						[
+							90,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0018"
+							}
+						],
+						[
+							92,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0019"
+							}
+						],
+						[
+							94,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0020"
+							}
+						],
+						[
+							96,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0021"
+							}
+						],
+						[
+							98,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0022"
+							}
+						],
+						[
+							100,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0023"
+							}
+						],
+						[
+							102,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0024"
+							}
+						],
+						[
+							104,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0025"
+							}
+						],
+						[
+							106,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0026"
+							}
+						],
+						[
+							108,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0027"
+							}
+						],
+						[
+							110,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_eclipse/0028"
+							}
+						],
+						[
+							112,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0001"
+							}
+						],
+						[
+							114,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0002"
+							}
+						],
+						[
+							116,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0003"
+							}
+						],
+						[
+							118,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0004"
+							}
+						],
+						[
+							120,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0005"
+							}
+						],
+						[
+							122,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0006"
+							}
+						],
+						[
+							124,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0007"
+							}
+						],
+						[
+							126,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0008"
+							}
+						],
+						[
+							128,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0009"
+							}
+						],
+						[
+							130,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0010"
+							}
+						],
+						[
+							132,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0011"
+							}
+						],
+						[
+							134,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0012"
+							}
+						],
+						[
+							136,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0013"
+							}
+						],
+						[
+							138,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0014"
+							}
+						],
+						[
+							140,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0015"
+							}
+						],
+						[
+							142,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0016"
+							}
+						],
+						[
+							144,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0017"
+							}
+						],
+						[
+							146,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0018"
+							}
+						],
+						[
+							148,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0019"
+							}
+						],
+						[
+							150,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0020"
+							}
+						],
+						[
+							152,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0021"
+							}
+						],
+						[
+							154,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0022"
+							}
+						],
+						[
+							156,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0023"
+							}
+						],
+						[
+							158,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0024"
+							}
+						],
+						[
+							160,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0025"
+							}
+						],
+						[
+							162,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0026"
+							}
+						],
+						[
+							164,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0027"
+							}
+						],
+						[
+							166,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_hole/0028"
+							}
+						],
+						[
+							168,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0001"
+							}
+						],
+						[
+							170,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0002"
+							}
+						],
+						[
+							172,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0003"
+							}
+						],
+						[
+							174,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0004"
+							}
+						],
+						[
+							176,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0005"
+							}
+						],
+						[
+							178,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0006"
+							}
+						],
+						[
+							180,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0007"
+							}
+						],
+						[
+							182,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0008"
+							}
+						],
+						[
+							184,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0009"
+							}
+						],
+						[
+							186,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0010"
+							}
+						],
+						[
+							188,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0011"
+							}
+						],
+						[
+							190,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0012"
+							}
+						],
+						[
+							192,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0013"
+							}
+						],
+						[
+							194,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0014"
+							}
+						],
+						[
+							196,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0015"
+							}
+						],
+						[
+							198,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0016"
+							}
+						],
+						[
+							200,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0017"
+							}
+						],
+						[
+							202,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0018"
+							}
+						],
+						[
+							204,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0019"
+							}
+						],
+						[
+							206,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0020"
+							}
+						],
+						[
+							208,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0021"
+							}
+						],
+						[
+							210,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0022"
+							}
+						],
+						[
+							212,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0023"
+							}
+						],
+						[
+							214,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0024"
+							}
+						],
+						[
+							216,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0025"
+							}
+						],
+						[
+							218,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0026"
+							}
+						],
+						[
+							220,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0027"
+							}
+						],
+						[
+							222,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern_hole/0028"
+							}
+						],
+						[
+							224,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0001"
+							}
+						],
+						[
+							226,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0002"
+							}
+						],
+						[
+							228,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0003"
+							}
+						],
+						[
+							230,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0004"
+							}
+						],
+						[
+							232,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0005"
+							}
+						],
+						[
+							234,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0006"
+							}
+						],
+						[
+							236,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0007"
+							}
+						],
+						[
+							238,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0008"
+							}
+						],
+						[
+							240,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0009"
+							}
+						],
+						[
+							242,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0010"
+							}
+						],
+						[
+							244,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0011"
+							}
+						],
+						[
+							246,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0012"
+							}
+						],
+						[
+							248,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0013"
+							}
+						],
+						[
+							250,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0014"
+							}
+						],
+						[
+							252,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0015"
+							}
+						],
+						[
+							254,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0016"
+							}
+						],
+						[
+							256,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0017"
+							}
+						],
+						[
+							258,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0018"
+							}
+						],
+						[
+							260,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0019"
+							}
+						],
+						[
+							262,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0020"
+							}
+						],
+						[
+							264,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0021"
+							}
+						],
+						[
+							266,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0022"
+							}
+						],
+						[
+							268,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0023"
+							}
+						],
+						[
+							270,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0024"
+							}
+						],
+						[
+							272,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0025"
+							}
+						],
+						[
+							274,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0026"
+							}
+						],
+						[
+							276,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0027"
+							}
+						],
+						[
+							278,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_lantern/0028"
 							}
 						]
 					],
@@ -749,14 +1579,6 @@
 				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,2,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
 					"AnimationId":"Show",
 					"ReadonlyKeys":[
 						[0,0,[44.999996,-50.5]],
@@ -764,38 +1586,6 @@
 						[4,0,[44.999996,45]]
 					],
 					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,[4294967295]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,[45,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,1,0]
-					],
-					"TargetProperty":"Rotation"
 				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
@@ -833,14 +1623,6 @@
 				},
 				{
 					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,[4294967295]]
-					],
-					"TargetProperty":"Color"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
 					"AnimationId":"Swap",
 					"ReadonlyKeys":[
 						[0,1,[4294967295]]
@@ -856,12 +1638,83 @@
 					"TargetProperty":"Scale"
 				},
 				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
+					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
 					"ReadonlyKeys":[
-						[0,1,[45,45]]
+						[
+							0,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0001"
+							}
+						],
+						[
+							1,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0002"
+							}
+						],
+						[
+							2,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0003"
+							}
+						],
+						[
+							3,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0004"
+							}
+						],
+						[
+							4,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0005"
+							}
+						],
+						[
+							5,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0006"
+							}
+						],
+						[
+							6,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0007"
+							}
+						],
+						[
+							7,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0008"
+							}
+						]
 					],
-					"TargetProperty":"Position"
+					"TargetProperty":"Texture"
+				},
+				{
+					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"AnimationId":"Kind",
+					"ReadonlyKeys":[
+						[168,0,true],
+						[224,0,true]
+					],
+					"TargetProperty":"Visible"
 				}
 			],
 			"Color":[4294967295],
@@ -871,20 +1724,12 @@
 			"Size":[90,90],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"Items/Marble01"
+				"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0001"
 			}
 		},
 		{
 			"class":"Lime.Image, Lime",
 			"Animators":[
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,1,false]
-					],
-					"TargetProperty":"Visible"
-				},
 				{
 					"class":"Lime.Animator`1[[System.Boolean]], Lime",
 					"AnimationId":"Swap",
@@ -909,6 +1754,8 @@
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
 
 
 

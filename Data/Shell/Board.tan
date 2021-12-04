@@ -369,7 +369,7 @@
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
 					"ReadonlyKeys":[
-						[0,0,"02@Color,Shown@Show,None@Selection"]
+						[0,0,"Shown@Show,None@Selection"]
 					],
 					"TargetProperty":"Trigger"
 				}
@@ -397,11 +397,10 @@
 			"Id":"Board",
 			"Pivot":[0.5,0.5],
 			"Position":[512,384],
-			"Size":[720,720],
-			"TangerineFlags":2,
+			"Size":[1280,720],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Game/Match3/Board/Board"
+				"SerializationPath":"Data/bg1_red/bg_00000"
 			}
 		},
 		{
@@ -413,7 +412,6 @@
 			"Position":[512,384],
 			"Shader":3,
 			"Size":[1024,768],
-			"TangerineFlags":2,
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime"
 			}
@@ -421,6 +419,10 @@
 	],
 	"Size":[1024,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
 
 
 
