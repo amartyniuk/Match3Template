@@ -151,6 +151,10 @@
 			"Components":[
 				{
 					"class":"Match3Template.Types.BoardConfigComponent, Match3Template.Types",
+					"AllowedPieces":[
+						0,
+						1
+					],
 					"DropCount":3,
 					"LevelFileName":"Game/Levels/GameLevel1",
 					"PreFillBoard":false,
@@ -198,8 +202,8 @@
 			"Id":"GameScreen",
 			"Pivot":[0.5,0.5],
 			"Position":[683,384],
-			"Size":[1280,720],
-			"TangerineFlags":1
+			"Size":[1366,768],
+			"TangerineFlags":4
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -410,346 +414,9 @@
 		{
 			"class":"Lime.Frame, Lime",
 			"Anchors":15,
-			"Animations":[
-				{
-					"IsLegacy":true,
-					"Markers":[
-						{
-							"Id":"start"
-						},
-						{
-							"Action":2,
-							"Frame":70,
-							"Id":"end",
-							"JumpTo":"start"
-						}
-					]
-				}
-			],
-			"Animators":[
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[10,0,"start"]
-					],
-					"TargetProperty":"Trigger"
-				}
-			],
 			"Color":[4294967295],
 			"Id":"BG",
 			"Nodes":[
-				{
-					"class":"Lime.Image, Lime",
-					"Anchors":15,
-					"Animators":[
-						{
-							"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
-							"ReadonlyKeys":[
-								[
-									0,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00000"
-									}
-								],
-								[
-									2,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00001"
-									}
-								],
-								[
-									4,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00002"
-									}
-								],
-								[
-									6,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00003"
-									}
-								],
-								[
-									8,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00004"
-									}
-								],
-								[
-									10,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00005"
-									}
-								],
-								[
-									12,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00006"
-									}
-								],
-								[
-									14,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00007"
-									}
-								],
-								[
-									16,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00008"
-									}
-								],
-								[
-									18,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00009"
-									}
-								],
-								[
-									20,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00010"
-									}
-								],
-								[
-									22,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00011"
-									}
-								],
-								[
-									24,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00012"
-									}
-								],
-								[
-									26,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00013"
-									}
-								],
-								[
-									28,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00014"
-									}
-								],
-								[
-									30,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00015"
-									}
-								],
-								[
-									32,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00016"
-									}
-								],
-								[
-									34,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00017"
-									}
-								],
-								[
-									36,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00018"
-									}
-								],
-								[
-									38,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00019"
-									}
-								],
-								[
-									40,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00020"
-									}
-								],
-								[
-									42,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00021"
-									}
-								],
-								[
-									44,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00022"
-									}
-								],
-								[
-									46,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00023"
-									}
-								],
-								[
-									48,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00024"
-									}
-								],
-								[
-									50,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00025"
-									}
-								],
-								[
-									52,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00026"
-									}
-								],
-								[
-									54,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00027"
-									}
-								],
-								[
-									56,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00028"
-									}
-								],
-								[
-									58,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00029"
-									}
-								],
-								[
-									60,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00030"
-									}
-								],
-								[
-									62,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00031"
-									}
-								],
-								[
-									64,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00032"
-									}
-								],
-								[
-									66,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00033"
-									}
-								],
-								[
-									68,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00034"
-									}
-								],
-								[
-									70,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"/Shell/Data/bg2 12fps/bg_00035"
-									}
-								]
-							],
-							"TargetProperty":"Texture"
-						}
-					],
-					"Color":[4294967295],
-					"FreezeInvisible":false,
-					"Id":"Bg",
-					"Pivot":[0.5,0.5],
-					"Position":[684.87146,385.14594],
-					"Size":[1364.1261,768.09625],
-					"TangerineFlags":4,
-					"Texture":{
-						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"/Shell/Data/bg2 12fps/bg_00000"
-					}
-				},
 				{
 					"class":"Lime.Image, Lime",
 					"Anchors":11,
@@ -764,6 +431,20 @@
 						"SerializationPath":"/Common/Masks/LineGradient"
 					},
 					"UV1":[1,0.5]
+				},
+				{
+					"class":"Lime.TiledImage, Lime",
+					"Anchors":15,
+					"Color":[4280098295],
+					"Id":"Bg",
+					"Pivot":[0.5,0.5],
+					"Position":[683,381.5],
+					"Size":[1366,763],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Shell/Data/UI/Bg"
+					},
+					"TileSize":[256,512]
 				}
 			],
 			"Pivot":[0.5,0.5],
