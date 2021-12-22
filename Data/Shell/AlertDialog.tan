@@ -103,7 +103,7 @@
 					"ContentsPath":"Externals/Win",
 					"Id":"Win",
 					"Pivot":[0.5,0.5],
-					"Position":[384,384],
+					"Position":[1300,384],
 					"Rotation":-3.5308838,
 					"Scale":[0.886942,0.8406234],
 					"Size":[512,512],
@@ -138,6 +138,7 @@
 	],
 	"Size":[1024,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

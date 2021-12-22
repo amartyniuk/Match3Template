@@ -84,7 +84,6 @@
 			"Id":"Ico",
 			"Pivot":[0.5,0.5],
 			"Position":[64.34996,63.516624],
-			"Rotation":2.3849792,
 			"Scale":[0.9626047,0.9626047],
 			"Shader":3,
 			"Size":[65,54],
@@ -140,7 +139,7 @@
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"BtnOrange"
+								"SerializationPath":"/Shell/Data/UI/BtnOrange"
 							}
 						],
 						[
@@ -283,7 +282,6 @@
 			"Pivot":[0.5,0.5],
 			"Position":[64.89968,74.5628],
 			"RightOffset":0.5,
-			"Rotation":5.1795807,
 			"Scale":[0.58936316,0.58936316],
 			"Size":[211.09941,207.42564],
 			"Texture":{
@@ -295,6 +293,9 @@
 	],
 	"Size":[128,128]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
 
 
 

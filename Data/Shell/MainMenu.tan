@@ -11,7 +11,9 @@
 				},
 				{
 					"Action":1,
-					"Frame":5
+					"Frame":8,
+					"Id":"",
+					"JumpTo":""
 				},
 				{
 					"Frame":10,
@@ -75,10 +77,9 @@
 					"AnimationId":"Appear",
 					"ReadonlyKeys":[
 						[0,0,[4294967295]],
-						[1,0,[16777215]],
-						[5,0,[16777215]],
+						[7,0,[16777215]],
 						[10,0,[16777215]],
-						[11,0,[4294967295]]
+						[14,0,[4294967295]]
 					],
 					"TargetProperty":"Color"
 				}
@@ -101,7 +102,8 @@
 					"ContentsPath":"Externals/BtnPlay",
 					"Id":"BtnGo",
 					"Pivot":[0.5,0.5],
-					"Position":[517,493],
+					"Position":[426.33325,426.3333],
+					"Scale":[0.7,0.7],
 					"Size":[232,148],
 					"TangerineFlags":512
 				},
@@ -120,12 +122,13 @@
 					"ContentsPath":"Externals/BtnOptions",
 					"Id":"BtnOptions",
 					"Pivot":[0.5,0.5],
-					"Position":[729.03687,551.03674],
+					"Position":[619.7035,423.03674],
+					"Scale":[0.7,0.7],
 					"Size":[128,128]
 				},
 				{
 					"class":"Lime.SimpleText, Lime",
-					"Color":[4294967295],
+					"Color":[4278190080],
 					"Components":[
 						{
 							"class":"Lime.SignedDistanceFieldComponent, Lime",
@@ -142,61 +145,16 @@
 						}
 					],
 					"Font":{
-						"Name":"RussoOne"
+						"Name":"Philosopher-Regular"
 					},
-					"FontHeight":60,
-					"HAlignment":1,
-					"Id":"Title",
-					"OverflowMode":1,
-					"Pivot":[0.5,1],
-					"Position":[472.66647,178.79285],
-					"Rotation":-3.0702667,
-					"Size":[374,64],
-					"Text":"Match 3 Template",
-					"VAlignment":1
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Color":[4294967295],
-					"ContentsPath":"Externals/TitleBar",
-					"Id":"TitleBar",
-					"Pivot":[0.5,0.5],
-					"Position":[464.01935,148.27159],
-					"Rotation":-3.0702667,
-					"Scale":[0.85744077,0.85744077],
-					"Size":[512,128],
-					"TangerineFlags":1024
-				},
-				{
-					"class":"Lime.SimpleText, Lime",
-					"Color":[4294967295],
-					"Components":[
-						{
-							"class":"Lime.SignedDistanceFieldComponent, Lime",
-							"Dilate":2,
-							"Gradient":[
-								{
-									"Color":[4294967295]
-								},
-								{
-									"Color":[4278190080],
-									"Position":1
-								}
-							]
-						}
-					],
-					"Font":{
-						"Name":"RobotoMed"
-					},
-					"FontHeight":38.8,
+					"FontHeight":193.90001,
 					"HAlignment":1,
 					"Id":"Text",
 					"OverflowMode":1,
 					"Pivot":[0.5,0.5],
-					"Position":[518.96234,311.96194],
-					"Size":[329.92465,180],
-					"Text":"Добро пожаловать\nв чудесный мир!",
-					"TextColor":[4287880191],
+					"Position":[513.5669,165.96194],
+					"Size":[887.1337,180],
+					"Text":"KINTSUGI",
 					"VAlignment":1
 				},
 				{
@@ -205,44 +163,16 @@
 					"ContentsPath":"Externals/Win",
 					"Id":"Win",
 					"Pivot":[0.5,0.5],
-					"Position":[532,384],
+					"Position":[1642,384],
 					"Rotation":-3.5308838,
 					"Scale":[1.154089,1.0313396],
 					"Size":[512,512],
-					"TangerineFlags":1792
+					"TangerineFlags":1793
 				}
 			],
 			"Pivot":[0.5,0.5],
 			"Position":[683,384],
 			"Size":[1024,768]
-		},
-		{
-			"class":"Lime.Image, Lime",
-			"Anchors":11,
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[0,0,[939524096]],
-						[5,0,[0]],
-						[10,0,[0]],
-						[11,0,[939524096]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[939524096],
-			"Id":"LineGradient",
-			"Pivot":[0.5,1],
-			"Position":[683,773],
-			"Size":[1366,560.38214],
-			"TangerineFlags":4,
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Common/Masks/LineGradient"
-			},
-			"UV1":[1,0.5]
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -253,9 +183,9 @@
 					"AnimationId":"Appear",
 					"ReadonlyKeys":[
 						[0,0,[4294967295]],
-						[5,0,[16777215]],
+						[7,0,[16777215]],
 						[10,0,[16777215]],
-						[11,0,[4294967295]]
+						[14,0,[4294967295]]
 					],
 					"TargetProperty":"Color"
 				}
@@ -264,9 +194,22 @@
 			"Id":"Logos",
 			"Nodes":[
 				{
+					"class":"Lime.Image, Lime",
+					"Color":[4294967295],
+					"Id":"t-logo_da",
+					"Pivot":[0.5,0.5],
+					"Position":[721.84894,56.093567],
+					"Size":[128.36446,50.14612],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/Splash/t-logo_da"
+					}
+				},
+				{
 					"class":"Lime.SimpleText, Lime",
 					"Anchors":9,
-					"Color":[3724541951],
+					"Blending":4,
+					"Color":[4294967295],
 					"Components":[
 						{
 							"class":"Lime.SignedDistanceFieldComponent, Lime",
@@ -283,16 +226,15 @@
 						}
 					],
 					"Font":{
-						"Name":"RussoOne"
+						"Name":"AlumniSans-Regular"
 					},
 					"FontHeight":60,
 					"Id":"Name",
 					"OverflowMode":1,
 					"Pivot":[0,0.5],
-					"Position":[99.8331,58.459595],
-					"Size":[337,64],
-					"Text":"Имя и Фамилия Студента Тут",
-					"TextColor":[4292576057],
+					"Position":[811.3332,59.311665],
+					"Size":[191.22908,51.62911],
+					"Text":"@MARTIN_UK",
 					"VAlignment":1
 				},
 				{
@@ -302,9 +244,9 @@
 					"Color":[2868903935],
 					"Id":"FEFU",
 					"Pivot":[0.5,0.5],
-					"Position":[61.166626,52.166626],
+					"Position":[608.4158,53.743412],
 					"Scale":[0.64038336,0.64038336],
-					"Size":[68,128],
+					"Size":[61.490772,115.74733],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"Data/Splash/FEFU"
@@ -386,7 +328,7 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[1292.6997,52.000008],
+					"Position":[522.36646,58.000008],
 					"Size":[102.73253,112]
 				},
 				{
@@ -454,7 +396,7 @@
 							"Color":[2868903935],
 							"Id":"CitrusLogo",
 							"Pivot":[0.5,0.49999952],
-							"Position":[55.933876,50.490715],
+							"Position":[60.937057,57.49073],
 							"Scale":[0.34875566,0.34875566],
 							"Size":[220,219.89764],
 							"TangerineFlags":4,
@@ -466,13 +408,53 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[1189.3662,52.000008],
-					"Size":[102.73253,112]
+					"Position":[399.86786,55.50001],
+					"Size":[107.73571,119.000015]
 				}
 			],
 			"Pivot":[1,1],
-			"Position":[1366,768],
+			"Position":[1366,742],
 			"Size":[1366,108]
+		},
+		{
+			"class":"Lime.Image, Lime",
+			"Anchors":11,
+			"Animators":[
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Appear",
+					"ReadonlyKeys":[
+						[0,0,[939524096]],
+						[7,0,[0]],
+						[10,0,[0]],
+						[14,0,[939524096]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[939524096],
+			"Id":"LineGradient",
+			"Pivot":[0.5,1],
+			"Position":[683,773],
+			"Size":[1366,560.38214],
+			"TangerineFlags":4,
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Common/Masks/LineGradient"
+			},
+			"UV1":[1,0.5]
+		},
+		{
+			"class":"Lime.Image, Lime",
+			"Color":[4294967295],
+			"Id":"main_screen",
+			"Pivot":[0.5,0.5],
+			"Position":[683,380],
+			"Size":[1377.2986,774.7304],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"Data/main_screen"
+			}
 		},
 		{
 			"class":"Lime.TiledImage, Lime",
@@ -483,9 +465,9 @@
 					"AnimationId":"Appear",
 					"ReadonlyKeys":[
 						[0,0,[4294967295]],
-						[5,0,[16777215]],
+						[7,0,[16777215]],
 						[10,0,[16777215]],
-						[11,0,[4294967295]]
+						[14,0,[4294967295]]
 					],
 					"TargetProperty":"Color"
 				}
@@ -504,6 +486,13 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
+
 
 
 

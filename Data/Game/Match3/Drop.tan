@@ -70,7 +70,7 @@
 				},
 				{
 					"Action":2,
-					"Frame":46,
+					"Frame":55,
 					"Id":"",
 					"JumpTo":"Start"
 				}
@@ -282,10 +282,7 @@
 					"class":"Lime.NumericAnimator, Lime",
 					"AnimationId":"Idle",
 					"ReadonlyKeys":[
-						[0,2,0],
-						[15,2,-7.1558228],
-						[29,2,4.1101227],
-						[46,2,0]
+						[0,2,0]
 					],
 					"TargetProperty":"Rotation"
 				},
@@ -390,6 +387,252 @@
 						[0,1,[1,1]]
 					],
 					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
+					"AnimationId":"ZeroPose",
+					"ReadonlyKeys":[
+						[
+							0,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0001"
+							}
+						]
+					],
+					"TargetProperty":"Texture"
+				},
+				{
+					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
+					"AnimationId":"Idle",
+					"ReadonlyKeys":[
+						[
+							0,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0001"
+							}
+						],
+						[
+							2,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0002"
+							}
+						],
+						[
+							4,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0003"
+							}
+						],
+						[
+							6,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0004"
+							}
+						],
+						[
+							8,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0005"
+							}
+						],
+						[
+							10,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0006"
+							}
+						],
+						[
+							12,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0007"
+							}
+						],
+						[
+							14,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0008"
+							}
+						],
+						[
+							16,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0009"
+							}
+						],
+						[
+							18,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0010"
+							}
+						],
+						[
+							20,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0011"
+							}
+						],
+						[
+							22,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0012"
+							}
+						],
+						[
+							24,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0013"
+							}
+						],
+						[
+							26,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0014"
+							}
+						],
+						[
+							28,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0015"
+							}
+						],
+						[
+							30,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0016"
+							}
+						],
+						[
+							32,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0017"
+							}
+						],
+						[
+							34,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0018"
+							}
+						],
+						[
+							36,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0019"
+							}
+						],
+						[
+							38,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0020"
+							}
+						],
+						[
+							40,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0021"
+							}
+						],
+						[
+							42,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0022"
+							}
+						],
+						[
+							44,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0023"
+							}
+						],
+						[
+							46,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0024"
+							}
+						],
+						[
+							48,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0025"
+							}
+						],
+						[
+							50,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0026"
+							}
+						],
+						[
+							52,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0027"
+							}
+						],
+						[
+							54,
+							0,
+							{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"/Shell/Data/marbles/drop/0028"
+							}
+						]
+					],
+					"TargetProperty":"Texture"
 				}
 			],
 			"Color":[4294967295],
@@ -399,13 +642,14 @@
 			"Size":[90,90],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"Drop/Drop"
+				"SerializationPath":"/Shell/Data/marbles/drop/0001"
 			}
 		}
 	],
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

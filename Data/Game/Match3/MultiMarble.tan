@@ -33,63 +33,58 @@
 			"Id":"Kind",
 			"Markers":[
 				{
-					"Action":1,
+					"Id":"00",
+					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":65,
+					"Id":"",
+					"JumpTo":"00"
+				},
+				{
+					"Frame":66,
 					"Id":"01",
 					"JumpTo":""
 				},
 				{
 					"Action":2,
-					"Frame":54,
+					"Frame":131,
 					"Id":"",
-					"JumpTo":""
+					"JumpTo":"01"
 				},
 				{
-					"Action":1,
-					"Frame":56,
+					"Frame":132,
 					"Id":"02",
 					"JumpTo":""
 				},
 				{
 					"Action":2,
-					"Frame":110,
+					"Frame":197,
 					"Id":"",
-					"JumpTo":""
+					"JumpTo":"02"
 				},
 				{
-					"Action":1,
-					"Frame":112,
+					"Frame":198,
 					"Id":"03",
 					"JumpTo":""
 				},
 				{
 					"Action":2,
-					"Frame":166,
+					"Frame":263,
 					"Id":"",
-					"JumpTo":""
+					"JumpTo":"03"
 				},
 				{
-					"Action":1,
-					"Frame":168,
+					"Frame":264,
 					"Id":"04",
 					"JumpTo":""
 				},
 				{
 					"Action":2,
-					"Frame":222,
+					"Frame":329,
 					"Id":"",
-					"JumpTo":""
-				},
-				{
-					"Action":1,
-					"Frame":224,
-					"Id":"05",
-					"JumpTo":""
-				},
-				{
-					"Action":2,
-					"Frame":278,
-					"Id":"",
-					"JumpTo":""
+					"JumpTo":"04"
 				}
 			]
 		},
@@ -129,7 +124,7 @@
 				},
 				{
 					"Action":1,
-					"Frame":23,
+					"Frame":16,
 					"Id":"",
 					"JumpTo":""
 				}
@@ -232,47 +227,6 @@
 	],
 	"Color":[4294967295],
 	"Nodes":[
-		{
-			"class":"Lime.SimpleText, Lime",
-			"Animators":[
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"Kind",
-					"ReadonlyKeys":[
-						[0,0,"01"],
-						[56,0,"02"],
-						[112,0,"03"],
-						[168,0,"04"],
-						[224,0,"05"]
-					],
-					"TargetProperty":"Text"
-				}
-			],
-			"Color":[4294967295],
-			"Components":[
-				{
-					"class":"Lime.SignedDistanceFieldComponent, Lime",
-					"Gradient":[
-						{
-							"Color":[4294967295]
-						},
-						{
-							"Color":[4278190080],
-							"Position":1
-						}
-					]
-				}
-			],
-			"Font":{
-				"Name":"RobotoMed"
-			},
-			"FontHeight":27.1,
-			"Id":"SimpleText",
-			"Pivot":[0.5,0.5],
-			"Position":[43.5,50],
-			"Size":[67,78],
-			"Text":"01"
-		},
 		{
 			"class":"Lime.ImageCombiner, Lime",
 			"Animators":[
@@ -418,7 +372,7 @@
 							}
 						],
 						[
-							30,
+							40,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -426,7 +380,7 @@
 							}
 						],
 						[
-							32,
+							42,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -434,7 +388,7 @@
 							}
 						],
 						[
-							34,
+							44,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -442,7 +396,7 @@
 							}
 						],
 						[
-							36,
+							46,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -450,7 +404,7 @@
 							}
 						],
 						[
-							38,
+							48,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -458,7 +412,7 @@
 							}
 						],
 						[
-							40,
+							50,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -466,7 +420,7 @@
 							}
 						],
 						[
-							42,
+							52,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -474,7 +428,7 @@
 							}
 						],
 						[
-							44,
+							54,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -482,7 +436,7 @@
 							}
 						],
 						[
-							46,
+							56,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -490,7 +444,7 @@
 							}
 						],
 						[
-							48,
+							58,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -498,7 +452,7 @@
 							}
 						],
 						[
-							50,
+							60,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -506,7 +460,7 @@
 							}
 						],
 						[
-							52,
+							62,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -514,7 +468,7 @@
 							}
 						],
 						[
-							54,
+							64,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -522,7 +476,7 @@
 							}
 						],
 						[
-							56,
+							66,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -530,7 +484,7 @@
 							}
 						],
 						[
-							58,
+							68,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -538,7 +492,7 @@
 							}
 						],
 						[
-							60,
+							70,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -546,7 +500,7 @@
 							}
 						],
 						[
-							62,
+							72,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -554,7 +508,7 @@
 							}
 						],
 						[
-							64,
+							74,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -562,7 +516,7 @@
 							}
 						],
 						[
-							66,
+							76,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -570,7 +524,7 @@
 							}
 						],
 						[
-							68,
+							78,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -578,7 +532,7 @@
 							}
 						],
 						[
-							70,
+							80,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -586,7 +540,7 @@
 							}
 						],
 						[
-							72,
+							82,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -594,7 +548,7 @@
 							}
 						],
 						[
-							74,
+							84,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -602,7 +556,7 @@
 							}
 						],
 						[
-							76,
+							86,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -610,7 +564,7 @@
 							}
 						],
 						[
-							78,
+							88,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -618,7 +572,7 @@
 							}
 						],
 						[
-							80,
+							90,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -626,7 +580,7 @@
 							}
 						],
 						[
-							82,
+							92,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -634,7 +588,7 @@
 							}
 						],
 						[
-							84,
+							94,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -642,7 +596,7 @@
 							}
 						],
 						[
-							86,
+							106,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -650,7 +604,7 @@
 							}
 						],
 						[
-							88,
+							108,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -658,7 +612,7 @@
 							}
 						],
 						[
-							90,
+							110,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -666,7 +620,7 @@
 							}
 						],
 						[
-							92,
+							112,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -674,7 +628,7 @@
 							}
 						],
 						[
-							94,
+							114,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -682,7 +636,7 @@
 							}
 						],
 						[
-							96,
+							116,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -690,7 +644,7 @@
 							}
 						],
 						[
-							98,
+							118,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -698,7 +652,7 @@
 							}
 						],
 						[
-							100,
+							120,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -706,7 +660,7 @@
 							}
 						],
 						[
-							102,
+							122,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -714,7 +668,7 @@
 							}
 						],
 						[
-							104,
+							124,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -722,7 +676,7 @@
 							}
 						],
 						[
-							106,
+							126,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -730,7 +684,7 @@
 							}
 						],
 						[
-							108,
+							128,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -738,7 +692,7 @@
 							}
 						],
 						[
-							110,
+							130,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -746,7 +700,7 @@
 							}
 						],
 						[
-							112,
+							132,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -754,7 +708,7 @@
 							}
 						],
 						[
-							114,
+							134,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -762,7 +716,7 @@
 							}
 						],
 						[
-							116,
+							136,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -770,7 +724,7 @@
 							}
 						],
 						[
-							118,
+							138,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -778,7 +732,7 @@
 							}
 						],
 						[
-							120,
+							140,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -786,7 +740,7 @@
 							}
 						],
 						[
-							122,
+							142,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -794,7 +748,7 @@
 							}
 						],
 						[
-							124,
+							144,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -802,7 +756,7 @@
 							}
 						],
 						[
-							126,
+							146,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -810,7 +764,7 @@
 							}
 						],
 						[
-							128,
+							148,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -818,7 +772,7 @@
 							}
 						],
 						[
-							130,
+							150,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -826,7 +780,7 @@
 							}
 						],
 						[
-							132,
+							152,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -834,7 +788,7 @@
 							}
 						],
 						[
-							134,
+							154,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -842,7 +796,7 @@
 							}
 						],
 						[
-							136,
+							156,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -850,7 +804,7 @@
 							}
 						],
 						[
-							138,
+							158,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -858,7 +812,7 @@
 							}
 						],
 						[
-							140,
+							160,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -866,7 +820,7 @@
 							}
 						],
 						[
-							142,
+							172,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -874,7 +828,7 @@
 							}
 						],
 						[
-							144,
+							174,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -882,7 +836,7 @@
 							}
 						],
 						[
-							146,
+							176,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -890,7 +844,7 @@
 							}
 						],
 						[
-							148,
+							178,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -898,7 +852,7 @@
 							}
 						],
 						[
-							150,
+							180,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -906,7 +860,7 @@
 							}
 						],
 						[
-							152,
+							182,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -914,7 +868,7 @@
 							}
 						],
 						[
-							154,
+							184,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -922,7 +876,7 @@
 							}
 						],
 						[
-							156,
+							186,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -930,7 +884,7 @@
 							}
 						],
 						[
-							158,
+							188,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -938,7 +892,7 @@
 							}
 						],
 						[
-							160,
+							190,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -946,7 +900,7 @@
 							}
 						],
 						[
-							162,
+							192,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -954,7 +908,7 @@
 							}
 						],
 						[
-							164,
+							194,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -962,7 +916,7 @@
 							}
 						],
 						[
-							166,
+							196,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -970,7 +924,7 @@
 							}
 						],
 						[
-							168,
+							198,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -978,7 +932,7 @@
 							}
 						],
 						[
-							170,
+							200,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -986,7 +940,7 @@
 							}
 						],
 						[
-							172,
+							202,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -994,7 +948,7 @@
 							}
 						],
 						[
-							174,
+							204,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1002,7 +956,7 @@
 							}
 						],
 						[
-							176,
+							206,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1010,7 +964,7 @@
 							}
 						],
 						[
-							178,
+							208,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1018,7 +972,7 @@
 							}
 						],
 						[
-							180,
+							210,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1026,7 +980,7 @@
 							}
 						],
 						[
-							182,
+							212,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1034,7 +988,7 @@
 							}
 						],
 						[
-							184,
+							214,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1042,7 +996,7 @@
 							}
 						],
 						[
-							186,
+							216,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1050,7 +1004,7 @@
 							}
 						],
 						[
-							188,
+							218,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1058,7 +1012,7 @@
 							}
 						],
 						[
-							190,
+							220,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1066,7 +1020,7 @@
 							}
 						],
 						[
-							192,
+							222,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1074,7 +1028,7 @@
 							}
 						],
 						[
-							194,
+							224,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1082,7 +1036,7 @@
 							}
 						],
 						[
-							196,
+							226,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1090,7 +1044,7 @@
 							}
 						],
 						[
-							198,
+							238,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1098,7 +1052,7 @@
 							}
 						],
 						[
-							200,
+							240,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1106,7 +1060,7 @@
 							}
 						],
 						[
-							202,
+							242,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1114,7 +1068,7 @@
 							}
 						],
 						[
-							204,
+							244,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1122,7 +1076,7 @@
 							}
 						],
 						[
-							206,
+							246,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1130,7 +1084,7 @@
 							}
 						],
 						[
-							208,
+							248,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1138,7 +1092,7 @@
 							}
 						],
 						[
-							210,
+							250,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1146,7 +1100,7 @@
 							}
 						],
 						[
-							212,
+							252,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1154,7 +1108,7 @@
 							}
 						],
 						[
-							214,
+							254,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1162,7 +1116,7 @@
 							}
 						],
 						[
-							216,
+							256,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1170,7 +1124,7 @@
 							}
 						],
 						[
-							218,
+							258,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1178,7 +1132,7 @@
 							}
 						],
 						[
-							220,
+							260,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1186,7 +1140,7 @@
 							}
 						],
 						[
-							222,
+							262,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1194,7 +1148,7 @@
 							}
 						],
 						[
-							224,
+							264,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1202,7 +1156,7 @@
 							}
 						],
 						[
-							226,
+							266,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1210,7 +1164,7 @@
 							}
 						],
 						[
-							228,
+							268,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1218,7 +1172,7 @@
 							}
 						],
 						[
-							230,
+							270,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1226,7 +1180,7 @@
 							}
 						],
 						[
-							232,
+							272,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1234,7 +1188,7 @@
 							}
 						],
 						[
-							234,
+							274,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1242,7 +1196,7 @@
 							}
 						],
 						[
-							236,
+							276,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1250,7 +1204,7 @@
 							}
 						],
 						[
-							238,
+							278,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1258,7 +1212,7 @@
 							}
 						],
 						[
-							240,
+							280,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1266,7 +1220,7 @@
 							}
 						],
 						[
-							242,
+							282,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1274,7 +1228,7 @@
 							}
 						],
 						[
-							244,
+							284,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1282,7 +1236,7 @@
 							}
 						],
 						[
-							246,
+							286,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1290,7 +1244,7 @@
 							}
 						],
 						[
-							248,
+							288,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1298,7 +1252,7 @@
 							}
 						],
 						[
-							250,
+							290,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1306,7 +1260,7 @@
 							}
 						],
 						[
-							252,
+							292,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1314,7 +1268,7 @@
 							}
 						],
 						[
-							254,
+							304,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1322,7 +1276,7 @@
 							}
 						],
 						[
-							256,
+							306,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1330,7 +1284,7 @@
 							}
 						],
 						[
-							258,
+							308,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1338,7 +1292,7 @@
 							}
 						],
 						[
-							260,
+							310,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1346,7 +1300,7 @@
 							}
 						],
 						[
-							262,
+							312,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1354,7 +1308,7 @@
 							}
 						],
 						[
-							264,
+							314,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1362,7 +1316,7 @@
 							}
 						],
 						[
-							266,
+							316,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1370,7 +1324,7 @@
 							}
 						],
 						[
-							268,
+							318,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1378,7 +1332,7 @@
 							}
 						],
 						[
-							270,
+							320,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1386,7 +1340,7 @@
 							}
 						],
 						[
-							272,
+							322,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1394,7 +1348,7 @@
 							}
 						],
 						[
-							274,
+							324,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1402,7 +1356,7 @@
 							}
 						],
 						[
-							276,
+							326,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1410,7 +1364,7 @@
 							}
 						],
 						[
-							278,
+							328,
 							0,
 							{
 								"class":"Lime.SerializableTexture, Lime",
@@ -1441,21 +1395,6 @@
 				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DropDown",
-					"ReadonlyKeys":[
-						[0,2,[1,1]],
-						[3,2,[0.8656715,1.0898876]],
-						[10,2,[0.8656715,1.0898876]],
-						[13,2,[1.0746272,0.77426946]],
-						[16,2,[0.8582591,1.0103356]],
-						[19,2,[1,1]],
-						[21,2,[0.96050745,0.77426946]],
-						[23,2,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
 					"AnimationId":"Selection",
 					"ReadonlyKeys":[
 						[1,2,[1,1]],
@@ -1464,19 +1403,6 @@
 						[11,2,[1,1]]
 					],
 					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"DropDown",
-					"ReadonlyKeys":[
-						[10,2,[45,45]],
-						[13,2,[45,57]],
-						[16,2,[45,42]],
-						[19,2,[44.999996,45]],
-						[21,2,[45,53]],
-						[23,2,[44.999996,45]]
-					],
-					"TargetProperty":"Position"
 				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
@@ -1613,11 +1539,11 @@
 					"AnimationId":"Swap",
 					"ReadonlyKeys":[
 						[10,0,0],
-						[20,0,180],
-						[30,0,360],
+						[20,0,0],
+						[30,0,0],
 						[40,0,0],
-						[50,0,-180],
-						[60,0,-360]
+						[50,0,0],
+						[60,0,0]
 					],
 					"TargetProperty":"Rotation"
 				},
@@ -1638,81 +1564,11 @@
 					"TargetProperty":"Scale"
 				},
 				{
-					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
-					"ReadonlyKeys":[
-						[
-							0,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0001"
-							}
-						],
-						[
-							1,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0002"
-							}
-						],
-						[
-							2,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0003"
-							}
-						],
-						[
-							3,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0004"
-							}
-						],
-						[
-							4,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0005"
-							}
-						],
-						[
-							5,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0006"
-							}
-						],
-						[
-							6,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0007"
-							}
-						],
-						[
-							7,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/marbles/cube_all_holes/0008"
-							}
-						]
-					],
-					"TargetProperty":"Texture"
-				},
-				{
 					"class":"Lime.Animator`1[[System.Boolean]], Lime",
 					"AnimationId":"Kind",
 					"ReadonlyKeys":[
-						[168,0,true],
-						[224,0,true]
+						[198,0,true],
+						[264,0,true]
 					],
 					"TargetProperty":"Visible"
 				}
@@ -1731,6 +1587,62 @@
 			"class":"Lime.Image, Lime",
 			"Animators":[
 				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[0,0,[0,80]],
+						[10,0,[80,80]],
+						[20,0,[126,126]],
+						[30,0,[80,80]],
+						[40,0,[80,90]],
+						[50,0,[72,72]],
+						[60,0,[80,80]]
+					],
+					"TargetProperty":"Size"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[12,0,[80,80]],
+						[14,0,[80,80]]
+					],
+					"TargetProperty":"Size"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[10,0,[0,0.3]],
+						[14,0,[1.2,0.3]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[12,0,[4294967295]],
+						[14,0,[16777215]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[4294967295],
+			"Id":"marble_selection",
+			"Pivot":[0.5,0.5],
+			"Position":[45,74.5],
+			"Scale":[0,0.3],
+			"Size":[80,80],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Shell/Data/marbles/marble_selection"
+			}
+		},
+		{
+			"class":"Lime.Image, Lime",
+			"Animators":[
+				{
 					"class":"Lime.Animator`1[[System.Boolean]], Lime",
 					"AnimationId":"Swap",
 					"ReadonlyKeys":[
@@ -1739,7 +1651,7 @@
 					"TargetProperty":"Visible"
 				}
 			],
-			"Color":[4294967295],
+			"Color":[2113929215],
 			"Id":"BoxBlurred",
 			"Pivot":[0.5,0.5],
 			"Position":[46.520866,-52.062477],
@@ -1754,6 +1666,12 @@
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
 
 
 

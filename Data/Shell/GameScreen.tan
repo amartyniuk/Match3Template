@@ -136,7 +136,7 @@
 				{
 					"Action":1,
 					"Frame":20,
-					"Id":"TabletLandscape",
+					"Id":"@TabletLandscape",
 					"JumpTo":""
 				},
 				{
@@ -148,18 +148,7 @@
 			]
 		},
 		{
-			"IsLegacy":true,
-			"Markers":[
-				{
-					"Id":"@start"
-				},
-				{
-					"Action":2,
-					"Frame":89,
-					"Id":"@end",
-					"JumpTo":"@start"
-				}
-			]
+			"IsLegacy":true
 		}
 	],
 	"Color":[4294967295],
@@ -340,18 +329,23 @@
 											"Color":[4278190080],
 											"Position":1
 										}
+									],
+									"Shadows":[
+										{
+											"Softness":33.64929
+										}
 									]
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Philosopher-Regular"
 							},
 							"FontHeight":44,
 							"HAlignment":1,
 							"Id":"LimitsValue",
 							"OverflowMode":1,
 							"Pivot":[0.50000006,0.5],
-							"Position":[168.5,88],
+							"Position":[205.833,84.66669],
 							"Size":[83.99645,64],
 							"Text":"24",
 							"VAlignment":1
@@ -372,25 +366,30 @@
 											"Color":[4278190080],
 											"Position":1
 										}
+									],
+									"Shadows":[
+										{
+											"Softness":33.175354
+										}
 									]
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Philosopher-Regular"
 							},
 							"FontHeight":44,
 							"HAlignment":1,
 							"Id":"Limits",
 							"OverflowMode":1,
 							"Pivot":[0.5,0.5],
-							"Position":[168.5,32],
+							"Position":[121.83334,82.66666],
 							"Size":[337,64],
 							"Text":"Ходы:",
 							"VAlignment":1
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[145.00473,122.99304],
+					"Position":[195.67142,52.659668],
 					"Size":[337,120]
 				},
 				{
@@ -400,16 +399,16 @@
 					"Nodes":[
 						{
 							"class":"Lime.Image, Lime",
-							"Color":[4294933475],
+							"Blending":0,
+							"Color":[4294967295],
 							"Id":"GoalsIcon",
 							"Pivot":[0.5,0.5],
-							"Position":[146.49527,87.00696],
+							"Position":[148,12.350063],
 							"Scale":[0.68224585,0.68224585],
-							"Shader":3,
-							"Size":[90,90],
+							"Size":[72.87098,72.87098],
 							"Texture":{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Game/Match3/Drop/Drop"
+								"SerializationPath":"Data/marbles/drop/0001"
 							}
 						},
 						{
@@ -428,17 +427,22 @@
 											"Color":[4278190080],
 											"Position":1
 										}
+									],
+									"Shadows":[
+										{
+											"Softness":33.175354
+										}
 									]
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Philosopher-Regular"
 							},
 							"FontHeight":44,
 							"Id":"GoalsValue",
 							"OverflowMode":1,
 							"Pivot":[0,0.5],
-							"Position":[184,88],
+							"Position":[190,12.6666565],
 							"Size":[83.99645,64],
 							"Text":"3",
 							"VAlignment":1
@@ -470,14 +474,14 @@
 							"Id":"Goals",
 							"OverflowMode":1,
 							"Pivot":[0.5,0.5],
-							"Position":[168.5,32],
+							"Position":[-198.5,-79],
 							"Size":[337,64],
 							"Text":"Цели:",
 							"VAlignment":1
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[145.00473,266.99304],
+					"Position":[201.67148,172.99298],
 					"Size":[337,120]
 				},
 				{
@@ -486,8 +490,9 @@
 					"ContentsPath":"Externals/Win",
 					"Id":"Win",
 					"Pivot":[0.5,0.5],
-					"Position":[12.5,116.5],
-					"Size":[512,512]
+					"Position":[-238.16417,-108.82224],
+					"Rotation":360,
+					"Size":[349.33792,213.05426]
 				}
 			],
 			"Pivot":[0.5,0.5],
@@ -503,15 +508,24 @@
 					"IsLegacy":true,
 					"Markers":[
 						{
-							"Id":"@start"
+							"Id":"start"
 						},
 						{
 							"Action":2,
-							"Frame":89,
-							"Id":"@end",
-							"JumpTo":"@start"
+							"Frame":71,
+							"Id":"",
+							"JumpTo":"start"
 						}
 					]
+				}
+			],
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.String]], Lime",
+					"ReadonlyKeys":[
+						[0,0,null]
+					],
+					"TargetProperty":"Trigger"
 				}
 			],
 			"Color":[4294967295],
@@ -528,7 +542,7 @@
 			"Nodes":[
 				{
 					"class":"Lime.Image, Lime",
-					"Anchors":15,
+					"Anchors":48,
 					"Animators":[
 						{
 							"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
@@ -538,15 +552,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00000"
-									}
-								],
-								[
-									1,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00001"
+										"SerializationPath":"Data/board/board_00000"
 									}
 								],
 								[
@@ -554,15 +560,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00002"
-									}
-								],
-								[
-									3,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00003"
+										"SerializationPath":"Data/board/board_00001"
 									}
 								],
 								[
@@ -570,15 +568,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00004"
-									}
-								],
-								[
-									5,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00005"
+										"SerializationPath":"Data/board/board_00002"
 									}
 								],
 								[
@@ -586,15 +576,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00006"
-									}
-								],
-								[
-									7,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00007"
+										"SerializationPath":"Data/board/board_00003"
 									}
 								],
 								[
@@ -602,15 +584,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00008"
-									}
-								],
-								[
-									9,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00009"
+										"SerializationPath":"Data/board/board_00004"
 									}
 								],
 								[
@@ -618,15 +592,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00010"
-									}
-								],
-								[
-									11,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00011"
+										"SerializationPath":"Data/board/board_00005"
 									}
 								],
 								[
@@ -634,15 +600,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00012"
-									}
-								],
-								[
-									13,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00013"
+										"SerializationPath":"Data/board/board_00006"
 									}
 								],
 								[
@@ -650,15 +608,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00014"
-									}
-								],
-								[
-									15,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00015"
+										"SerializationPath":"Data/board/board_00007"
 									}
 								],
 								[
@@ -666,15 +616,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00016"
-									}
-								],
-								[
-									17,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00017"
+										"SerializationPath":"Data/board/board_00008"
 									}
 								],
 								[
@@ -682,15 +624,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00018"
-									}
-								],
-								[
-									19,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00019"
+										"SerializationPath":"Data/board/board_00009"
 									}
 								],
 								[
@@ -698,15 +632,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00020"
-									}
-								],
-								[
-									21,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00021"
+										"SerializationPath":"Data/board/board_00010"
 									}
 								],
 								[
@@ -714,15 +640,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00022"
-									}
-								],
-								[
-									23,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00023"
+										"SerializationPath":"Data/board/board_00011"
 									}
 								],
 								[
@@ -730,15 +648,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00024"
-									}
-								],
-								[
-									25,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00025"
+										"SerializationPath":"Data/board/board_00012"
 									}
 								],
 								[
@@ -746,15 +656,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00026"
-									}
-								],
-								[
-									27,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00027"
+										"SerializationPath":"Data/board/board_00013"
 									}
 								],
 								[
@@ -762,15 +664,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00028"
-									}
-								],
-								[
-									29,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00029"
+										"SerializationPath":"Data/board/board_00014"
 									}
 								],
 								[
@@ -778,15 +672,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00030"
-									}
-								],
-								[
-									31,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00031"
+										"SerializationPath":"Data/board/board_00015"
 									}
 								],
 								[
@@ -794,15 +680,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00032"
-									}
-								],
-								[
-									33,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00033"
+										"SerializationPath":"Data/board/board_00016"
 									}
 								],
 								[
@@ -810,15 +688,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00034"
-									}
-								],
-								[
-									35,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00035"
+										"SerializationPath":"Data/board/board_00017"
 									}
 								],
 								[
@@ -826,15 +696,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00036"
-									}
-								],
-								[
-									37,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00037"
+										"SerializationPath":"Data/board/board_00018"
 									}
 								],
 								[
@@ -842,15 +704,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00038"
-									}
-								],
-								[
-									39,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00039"
+										"SerializationPath":"Data/board/board_00019"
 									}
 								],
 								[
@@ -858,15 +712,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00040"
-									}
-								],
-								[
-									41,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00041"
+										"SerializationPath":"Data/board/board_00020"
 									}
 								],
 								[
@@ -874,15 +720,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00042"
-									}
-								],
-								[
-									43,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00043"
+										"SerializationPath":"Data/board/board_00021"
 									}
 								],
 								[
@@ -890,15 +728,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00044"
-									}
-								],
-								[
-									45,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00045"
+										"SerializationPath":"Data/board/board_00022"
 									}
 								],
 								[
@@ -906,15 +736,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00046"
-									}
-								],
-								[
-									47,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00047"
+										"SerializationPath":"Data/board/board_00023"
 									}
 								],
 								[
@@ -922,15 +744,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00048"
-									}
-								],
-								[
-									49,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00049"
+										"SerializationPath":"Data/board/board_00024"
 									}
 								],
 								[
@@ -938,15 +752,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00050"
-									}
-								],
-								[
-									51,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00051"
+										"SerializationPath":"Data/board/board_00025"
 									}
 								],
 								[
@@ -954,15 +760,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00052"
-									}
-								],
-								[
-									53,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00053"
+										"SerializationPath":"Data/board/board_00026"
 									}
 								],
 								[
@@ -970,15 +768,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00054"
-									}
-								],
-								[
-									55,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00055"
+										"SerializationPath":"Data/board/board_00027"
 									}
 								],
 								[
@@ -986,15 +776,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00056"
-									}
-								],
-								[
-									57,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00057"
+										"SerializationPath":"Data/board/board_00028"
 									}
 								],
 								[
@@ -1002,15 +784,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00058"
-									}
-								],
-								[
-									59,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00059"
+										"SerializationPath":"Data/board/board_00029"
 									}
 								],
 								[
@@ -1018,15 +792,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00060"
-									}
-								],
-								[
-									61,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00061"
+										"SerializationPath":"Data/board/board_00030"
 									}
 								],
 								[
@@ -1034,15 +800,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00062"
-									}
-								],
-								[
-									63,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00063"
+										"SerializationPath":"Data/board/board_00031"
 									}
 								],
 								[
@@ -1050,15 +808,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00064"
-									}
-								],
-								[
-									65,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00065"
+										"SerializationPath":"Data/board/board_00032"
 									}
 								],
 								[
@@ -1066,15 +816,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00066"
-									}
-								],
-								[
-									67,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00067"
+										"SerializationPath":"Data/board/board_00033"
 									}
 								],
 								[
@@ -1082,15 +824,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00068"
-									}
-								],
-								[
-									69,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00069"
+										"SerializationPath":"Data/board/board_00034"
 									}
 								],
 								[
@@ -1098,159 +832,7 @@
 									0,
 									{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00070"
-									}
-								],
-								[
-									71,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00071"
-									}
-								],
-								[
-									72,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00072"
-									}
-								],
-								[
-									73,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00073"
-									}
-								],
-								[
-									74,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00074"
-									}
-								],
-								[
-									75,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00075"
-									}
-								],
-								[
-									76,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00076"
-									}
-								],
-								[
-									77,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00077"
-									}
-								],
-								[
-									78,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00078"
-									}
-								],
-								[
-									79,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00079"
-									}
-								],
-								[
-									80,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00080"
-									}
-								],
-								[
-									81,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00081"
-									}
-								],
-								[
-									82,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00082"
-									}
-								],
-								[
-									83,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00083"
-									}
-								],
-								[
-									84,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00084"
-									}
-								],
-								[
-									85,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00085"
-									}
-								],
-								[
-									86,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00086"
-									}
-								],
-								[
-									87,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00087"
-									}
-								],
-								[
-									88,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00088"
-									}
-								],
-								[
-									89,
-									0,
-									{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/bg1_red/bg_00089"
+										"SerializationPath":"Data/board/board_00035"
 									}
 								]
 							],
@@ -1258,26 +840,32 @@
 						}
 					],
 					"Color":[4294967295],
-					"Id":"Image",
+					"Id":"Board",
 					"Pivot":[0.5,0.5],
-					"Position":[360,360],
-					"Size":[1280,720],
-					"TangerineFlags":4,
+					"Position":[364,362],
+					"Size":[720,720],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"Data/bg1_red/bg_00000"
+						"SerializationPath":"Data/board/board_00000"
 					},
 					"Visible":false
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
+			"Position":[724,378],
 			"Size":[720,720],
 			"TangerineFlags":516
 		}
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
+
 
 
 

@@ -2,7 +2,19 @@
 	"class":"Lime.Frame, Lime",
 	"Animations":[
 		{
-			"IsLegacy":true
+			"IsLegacy":true,
+			"Markers":[
+				{
+					"Id":"Start",
+					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":71,
+					"Id":"",
+					"JumpTo":"Start"
+				}
+			]
 		}
 	],
 	"Color":[4294967295],
@@ -388,7 +400,8 @@
 			"Id":"Cell",
 			"Pivot":[0.5,0.5],
 			"Position":[82.00009,667.33325],
-			"Size":[90,90]
+			"Size":[90,90],
+			"Visible":false
 		},
 		{
 			"class":"Lime.Image, Lime",
@@ -396,12 +409,14 @@
 			"Color":[4294967295],
 			"Id":"Board",
 			"Pivot":[0.5,0.5],
-			"Position":[512,384],
-			"Size":[1280,720],
+			"Position":[504,384],
+			"Size":[720,720],
+			"TangerineFlags":1,
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"Data/bg1_red/bg_00000"
-			}
+				"SerializationPath":"Data/board/board_00000"
+			},
+			"Visible":false
 		},
 		{
 			"class":"Lime.Image, Lime",
@@ -419,6 +434,15 @@
 	],
 	"Size":[1024,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
+
+
+
 
 
 

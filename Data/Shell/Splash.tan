@@ -107,11 +107,23 @@
 			"Nodes":[
 				{
 					"class":"Lime.Image, Lime",
+					"Color":[4294967295],
+					"Id":"t-logo_da",
+					"Pivot":[0.5,0.5],
+					"Position":[766.96814,159.7912],
+					"Size":[344.93677,134.751],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/Splash/t-logo_da"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
 					"Anchors":48,
 					"Color":[4294967295],
 					"Id":"CitrusLogo",
 					"Pivot":[0.5,0.5],
-					"Position":[87.99866,182.66663],
+					"Position":[-33.33438,182.66663],
 					"Scale":[0.8,0.8],
 					"Size":[220,328],
 					"Texture":{
@@ -122,29 +134,16 @@
 				{
 					"class":"Lime.Image, Lime",
 					"Anchors":48,
-					"Color":[4279024900],
+					"Color":[4294967295],
 					"Id":"GameForest",
 					"Pivot":[0.5,0.5],
-					"Position":[547.6653,186.92181],
+					"Position":[322.0481,172.96657],
 					"Scale":[0.8,0.8],
-					"Size":[612,256],
+					"Size":[512.1234,214.22156],
 					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"Data/Splash/GameForest"
-					}
-				},
-				{
-					"class":"Lime.Image, Lime",
-					"Anchors":48,
-					"Color":[4288124823],
-					"Id":"Separator",
-					"Pivot":[0.5,0.5],
-					"Position":[241.8811,184.92181],
-					"Size":[7,346],
-					"Texture":{
-						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"/Common/Masks/LineGradient"
 					}
 				}
 			],
@@ -181,6 +180,7 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
